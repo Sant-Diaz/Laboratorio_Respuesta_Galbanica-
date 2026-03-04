@@ -116,6 +116,122 @@ Basados en la literatura que cita directamente IEC 60479-1 [23][26][29][27]:
 
 Estos elementos permiten evaluar sistemáticamente el riesgo de choques en instalaciones eléctricas y definir medidas de protección para personas.
 
+# Cálculo de la corriente que circula a través del sujeto
+
+## Fórmula general del cálculo
+
+La corriente que circula a través del sujeto está dada por:
+
+\[
+I = \frac{V_{CC} - V_{EE}}{68k\Omega + R_{skin}}
+\]
+
+Donde:
+
+- \( V_{CC} - V_{EE} \) es el voltaje de alimentación.
+- 68kΩ es la resistencia fija de protección en serie.
+- \( R_{skin} \) es la resistencia de la piel del sujeto.
+- \( I \) es la corriente que circulará a través del cuerpo.
+
+En nuestro laboratorio se utilizará una fuente de **6 V DC**.
+
+---
+
+# A. Caso extremo: Resistencia de piel igual a 0 Ω
+
+Se analiza la condición más crítica posible:
+
+\[
+R_{skin} = 0 \Omega
+\]
+
+Entonces la corriente máxima será:
+
+\[
+I = \frac{6V}{68,000\Omega}
+\]
+
+\[
+I = 8.82 \times 10^{-5} A
+\]
+
+\[
+I = 0.088 mA
+\]
+
+### Resultado
+
+Incluso en el peor escenario (cortocircuito en la piel), la corriente máxima es:
+
+\[
+I_{max} = 0.088 mA
+\]
+
+Este valor es **muy inferior a 1 mA**, que es el límite establecido en el laboratorio.
+
+---
+
+# B. Caso real: Resistencia de piel en la frente
+
+Los electrodos serán colocados en la frente.
+
+La literatura sobre bioinstrumentación y actividad electrodérmica reporta que:
+
+- La resistencia piel-electrodo en zonas como frente o antebrazo puede variar entre **10 kΩ y 100 kΩ**, dependiendo de hidratación y contacto.
+- La impedancia disminuye significativamente cuando se usa gel conductor.
+
+Referencias típicas utilizadas en bioinstrumentación:
+
+- Webster, J. G. *Medical Instrumentation: Application and Design*.
+- Grimnes & Martinsen. *Bioimpedance and Bioelectricity Basics*.
+- IEC 60479-1 (modelos de impedancia del cuerpo humano).
+
+Para un escenario conservador pero realista en la frente, asumimos:
+
+\[
+R_{skin} = 20k\Omega
+\]
+
+Entonces:
+
+\[
+I = \frac{6V}{68,000\Omega + 20,000\Omega}
+\]
+
+\[
+I = \frac{6}{88,000}
+\]
+
+\[
+I = 6.82 \times 10^{-5} A
+\]
+
+\[
+I = 0.068 mA
+\]
+
+---
+
+# ¿Por qué es seguro?
+
+Según IEC 60479-1:
+
+- El umbral de percepción en corriente DC es del orden de 1 mA o mayor.
+- Corrientes menores a 0.5 mA se consideran no perceptibles en la mayoría de los casos.
+- El riesgo de fibrilación ventricular ocurre en corrientes mucho mayores (decenas de mA atravesando el tórax).
+
+En nuestro diseño:
+
+- Corriente máxima absoluta: 0.088 mA
+- Corriente real estimada: 0.068 mA
+
+Estos valores son:
+
+- Más de 10 veces menores que el límite de 1 mA.
+- Muy por debajo del umbral de percepción.
+- Extremadamente alejados de niveles peligrosos.
+
+Por tanto, el sistema es eléctricamente seguro bajo las condiciones establecidas.
                              
  # BIBLIOGRAFIA
 - [1] Pop-Jordanova, N., & Pop-Jordanov, J. (2020). Electrodermal Activity and Stress Assessment. PRILOZI, 41, 5 - 15. https://doi.org/10.2478/prilozi-2020-0028.
