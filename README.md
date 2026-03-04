@@ -123,15 +123,7 @@ Estos elementos permiten evaluar sistemáticamente el riesgo de choques en insta
 La corriente que circula a través del sujeto está dada por:
 
 <p align="center">
-  <b>I =</b>
-</p>
-
-<p align="center">
-  (V<sub>CC</sub> − V<sub>EE</sub>)
-  <br>
-  ―――――――――――――――――――――――――――
-  <br>
-  68 kΩ + R<sub>skin</sub>
+I = (V<sub>CC</sub> - V<sub>EE</sub>) / (68 kΩ + R<sub>skin</sub>)
 </p>
 
 Donde:
