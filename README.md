@@ -56,7 +56,47 @@ Usos Principales
 <p align="center">
   <em>Figura 3. Usos Principales para la señal EDA/GSR</em>
 </p>
+# Zonas del cuerpo con glándulas sudoríparas útiles para conductancia cutánea
 
+El cuerpo tiene glándulas ecrinas prácticamente en toda la piel, con mayor densidad en palmas, plantas, frente y dedos.
+
+## Distribución de glándulas y sudor
+
+Las glándulas ecrinas están en casi todo el tegumento; se concentran sobre todo en palmas y plantas, con densidades muy altas también en la frente.
+
+Las regiones sin glándulas sudoríparas son pocas: borde rojo de los labios, conducto auditivo externo, lecho ungueal, glande, clítoris y labios menores.
+
+En términos de tasa de sudoración durante calor o ejercicio, las zonas más activas son: espalda (central y baja), frente, dedos dorsales y parte alta de la espalda; las menos activas son: brazos, muslos y parte baja de las piernas.
+
+---
+
+## Opciones prácticas para el laboratorio de EDA
+
+Estudios que comparan ubicaciones para conductancia cutánea muestran:
+
+| Zona                          | Utilidad para EDA emocional            | Comentarios                                                   |
+|-------------------------------|----------------------------------------|---------------------------------------------------------------|
+| Dedos / palmas                | Muy alta (estándar oro)                | Máxima densidad de glándulas y alta reactividad fisiológica  |
+| Plantas / pies (dedos, arco)  | Muy buena alternativa                  | Respuesta similar o incluso superior a los dedos              |
+| Muñeca                        | Aceptable si manos/pies no disponibles | Menor amplitud de señal, pero funcional                      |
+| Hombros                       | Buena para emoción                     | Mejor que brazo o espalda, aunque menos práctico para cables |
+| Frente                        | Poco fiable                            | Alta tasa de sudor, pero baja correlación con EDA emocional  |
+| Espalda / pecho               | Baja reactividad                       | No recomendadas como sustituto de dedos                      |
+
+**Figura 1.** Comparación de localizaciones para medir EDA.
+
+---
+
+## Recomendaciones concretas
+
+- Si no es posible usar los dedos, los pies (dedos o arco plantar) representan la mejor alternativa para registrar respuestas emocionales.
+- Si los pies tampoco pueden utilizarse, la muñeca es una opción aceptable, considerando que la señal tendrá menor amplitud.
+
+---
+
+## Conclusión
+
+Aunque casi toda la piel posee glándulas sudoríparas, para la medición de conductancia cutánea asociada a respuestas emocionales las zonas más adecuadas son dedos y palmas. Como alternativa viable se encuentran los pies. La frente presenta producción de sudor significativa, pero no ofrece una señal de EDA tan consistente ni confiable como manos o pies.
 
 # Efectos de la corriente eléctrica en el ser humano según IEC 60479 (ítems 1-5)
 
