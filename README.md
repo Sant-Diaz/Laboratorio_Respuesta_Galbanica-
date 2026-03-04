@@ -47,51 +47,51 @@ La norma IEC 60479-1 describe cómo la intensidad, tipo de corriente (CC/CA), fr
 
 ## Factores generales (aplica a CA y CC)
 
-- El riesgo se relaciona con la corriente que atraviesa el cuerpo, no solo con el voltaje; esta depende de la impedancia corporal (piel, tejidos, humedad, área de contacto) 367.  
-- Corrientes que cruzan el tórax y el corazón (por ejemplo, mano-mano, mano-pies) tienen mucha mayor probabilidad de producir fibrilación ventricular (FV) que trayectorias solo entre pies 67.  
-- IEC 60479-1 usa curvas corriente-tiempo para delimitar zonas de: no percepción, percepción, tetania/dificultad para soltar y riesgo de FV 367.
+- El riesgo se relaciona con la corriente que atraviesa el cuerpo, no solo con el voltaje; esta depende de la impedancia corporal (piel, tejidos, humedad, área de contacto) [23][26][27].  
+- Corrientes que cruzan el tórax y el corazón (por ejemplo, mano-mano, mano-pies) tienen mucha mayor probabilidad de producir fibrilación ventricular (FV) que trayectorias solo entre pies [26][27].  
+- IEC 60479-1 usa curvas corriente-tiempo para delimitar zonas de: no percepción, percepción, tetania/dificultad para soltar y riesgo de FV [23][26][27].
 
 ---
 
 ## Corriente alterna (CA, 15–100 Hz, p.ej. 50/60 Hz de red)
 
-Las curvas de IEC 60479-1 para CA de baja frecuencia muestran que 369:
+Las curvas de IEC 60479-1 para CA de baja frecuencia muestran que [23][26][29]:
 
 | Rango de corriente (mano-mano, adulto) | Efectos típicos | Citaciones |
 |----------------------------------------|-----------------|------------|
-| ~0,5–1 mA | Umbral de percepción (hormigueo) | 326 |
-| 5–10 mA | Dolor notable; comienzo de contracción muscular | 3269 |
-| 10–30 mA | Tetania; posible imposibilidad de “soltar” el conductor | 36 |
-| 30–50 mA | Dificultad respiratoria; riesgo creciente para el corazón | 369 |
-| ≥50–100 mA (≈100 ms o más) | Alto riesgo de fibrilación ventricular y muerte | 368 |
+| ~0,5–1 mA | Umbral de percepción (hormigueo) | [23][22][26] |
+| 5–10 mA | Dolor notable; comienzo de contracción muscular | [23][22][26][29] |
+| 10–30 mA | Tetania; posible imposibilidad de “soltar” el conductor | [23][26] |
+| 30–50 mA | Dificultad respiratoria; riesgo creciente para el corazón | [23][26][29] |
+| ≥50–100 mA (≈100 ms o más) | Alto riesgo de fibrilación ventricular y muerte | [23][26][28] |
 
 **Figura 2.** Rangos típicos de corrientes y efectos en CA 50/60 Hz.
 
-- La probabilidad de FV aumenta con la corriente y con la duración del choque; IEC 60479-1 define factores de “corriente de corazón” (heart current factors) para distintos recorridos 6.  
-- La CA de 50/60 Hz es especialmente peligrosa para el corazón (más eficaz en inducir FV que otras frecuencias) 369.
+- La probabilidad de FV aumenta con la corriente y con la duración del choque; IEC 60479-1 define factores de “corriente de corazón” (heart current factors) para distintos recorridos [26].  
+- La CA de 50/60 Hz es especialmente peligrosa para el corazón (más eficaz en inducir FV que otras frecuencias) [23][26][29].
 
 ---
 
 ## Corriente continua (CC, DC)
 
-IEC 60479 también da límites para CC, pero la respuesta fisiológica difiere 3176:
+IEC 60479 también da límites para CC, pero la respuesta fisiológica difiere [23][37][26]:
 
-- El umbral de percepción puede ser algo mayor que en CA; la contracción muscular sostenida es frecuente, pero la tendencia a FV es diferente 36.  
-- Por encima de unos pocos decenas de mA de CC pueden aparecer quemaduras, contracciones musculares dolorosas, parálisis respiratoria y, a intensidades elevadas, paro cardiaco (por FV o asistolia) 317.  
-- Estudios de lesiones por CC muestran quemaduras y lesiones neurológicas importantes incluso cuando la FV no es el principal desenlace 17.  
-- Modelos basados en IEC 60479 se usan para estimar la impedancia del cuerpo en choques CC y CA y así definir dispositivos de protección (disyuntores diferenciales, detectores de corriente de fuga, etc.) 311.
+- El umbral de percepción puede ser algo mayor que en CA; la contracción muscular sostenida es frecuente, pero la tendencia a FV es diferente [23][26].  
+- Por encima de unos pocos decenas de mA de CC pueden aparecer quemaduras, contracciones musculares dolorosas, parálisis respiratoria y, a intensidades elevadas, paro cardiaco (por FV o asistolia) [23][27].  
+- Estudios de lesiones por CC muestran quemaduras y lesiones neurológicas importantes incluso cuando la FV no es el principal desenlace [37].  
+- Modelos basados en IEC 60479 se usan para estimar la impedancia del cuerpo en choques CC y CA y así definir dispositivos de protección (disyuntores diferenciales, detectores de corriente de fuga, etc.) [23][31].
 
 ---
 
 ## Resumen conceptual de los ítems 1-5 de IEC 60479-1
 
-Basados en la literatura que cita directamente IEC 60479-1 3697:
+Basados en la literatura que cita directamente IEC 60479-1 [23][26][29][27]:
 
 - **Aspectos generales:** define modelos de impedancia del cuerpo y factores que influyen (tensión de contacto, humedad, área y trayectoria de contacto, frecuencia).  
 - **Curvas de corriente-tiempo:** zonas sin efecto, con efectos reversibles, y con probabilidad creciente de FV.  
-- **Corriente de corazón (heart current factors):** coeficientes que ajustan la corriente medida a la fracción que realmente atraviesa el corazón según la trayectoria 6.  
-- **Diferencias CA/CC y con la frecuencia:** la CA 15–100 Hz tiene máxima eficacia fibrilante; CC y frecuencias altas se tratan con límites específicos 3689.  
-- **Aplicación a seguridad:** la norma sirve de base para calcular tensiones de contacto seguras, tiempos máximos de desconexión y diseño de sistemas de puesta a tierra y protección 3711.
+- **Corriente de corazón (heart current factors):** coeficientes que ajustan la corriente medida a la fracción que realmente atraviesa el corazón según la trayectoria [26].  
+- **Diferencias CA/CC y con la frecuencia:** la CA 15–100 Hz tiene máxima eficacia fibrilante; CC y frecuencias altas se tratan con límites específicos [23][26][28][29].  
+- **Aplicación a seguridad:** la norma sirve de base para calcular tensiones de contacto seguras, tiempos máximos de desconexión y diseño de sistemas de puesta a tierra y protección [23][27][31].
 
 ---
 
