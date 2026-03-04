@@ -65,7 +65,7 @@ Las curvas de IEC 60479-1 para CA de baja frecuencia muestran que 369:
 | 30–50 mA | Dificultad respiratoria; riesgo creciente para el corazón | 369 |
 | ≥50–100 mA (≈100 ms o más) | Alto riesgo de fibrilación ventricular y muerte | 368 |
 
-**Figura 1.** Rangos típicos de corrientes y efectos en CA 50/60 Hz.
+**Figura 2.** Rangos típicos de corrientes y efectos en CA 50/60 Hz.
 
 - La probabilidad de FV aumenta con la corriente y con la duración del choque; IEC 60479-1 define factores de “corriente de corazón” (heart current factors) para distintos recorridos 6.  
 - La CA de 50/60 Hz es especialmente peligrosa para el corazón (más eficaz en inducir FV que otras frecuencias) 369.
