@@ -3,7 +3,13 @@
 ## Actividad Electrodermica
 
 La actividad electrodermica (AED/EDA) y la respuesta galvanica cutanea (GSR) se refieren a cambios en las propiedades electricas de la piel causados por la actividad de las glandulas sudoriparas bajo control del sistema simpatico. Son esencialmente el mismo fenomeno medido y nombrado de formas ligeramente distintas. 
-[forma_onda.png]
+<p align="center">
+  <img src="forma_onda.png" width="500">
+</p>
+
+<p align="center">
+  <em>Figura 1. Forma de onda típica de la señal SCR.</em>
+</p>
 
 ---
 
