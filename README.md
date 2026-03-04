@@ -4,15 +4,32 @@ La actividad electrodermica (AED/EDA) y la respuesta galvanica cutanea (GSR) se 
 
 Conceptos Basicos 
 - Actividad electrodérmica (EDA)
-  Es cualquier fenomeno electrico observable en la piel, normalmente medido como conductancia cutanea(cuanta corriente pasa) o resistencia cutanea (cuanto se opone) .
-  Estos cmabios se deben a la sudoracion: mas sudos(agua con sales) ---> Mayor conductancia, menor resistencia[3][4].
+  Es cualquier fenomeno electrico observable en la piel, normalmente medido como conductancia cutanea(cuanta corriente pasa) o resistencia cutanea (cuanto se opone) [3][8][10].
+  Estos cmabios se deben a la sudoracion: mas sudos(agua con sales) ---> Mayor conductancia, menor resistencia[3][19].
   
 - Respuesta Galvanica Cutanea (GSR)
- Es el nombre clasico para las variaciones rapidas y trasnsitorias de la EDA ante estimulos emocionales o cognitivos(sonidos, imagenes, pensamientos, estres, miedo, atencion) 
+ Es el nombre clasico para las variaciones rapidas y trasnsitorias de la EDA ante estimulos emocionales o cognitivos(sonidos, imagenes, pensamientos, estres, miedo, atencion)[1][2][5][10]. 
 Suele Descomponerse en:
-  *Nivel de Conductancia cutanea (SCL): Componentes tonico, de fondo, mas lento 
+  Nivel de conductancia cutánea (SCL): componente tónico, de fondo, más lento[2][18].
+  Respuestas de conductancia cutánea (SCR): picos rápidos ligados a estímulos concretos[2][10][20].
+  
+Base fisiológica y qué indica
+La EDA/GSR refleja la inervación simpática de las glándulas sudoríparas ecrinas, especialmente en palmas y plantas, muy sensibles a estímulos psicológicos más que térmicos [3][10][20].
+Es un índice objetivo de activación del sistema nervioso autónomo y de arousal emocional o cognitivo (estrés, atención, ansiedad, carga mental) [1][2][8][12][18].
 
+Usos Principales
+  USO                          Qué se mide               Aplicaciones           Citaciones 
+  Estres y emocion         Cambios en SCL y SCR       Psico/Neurofisiologia,    [1][3][5][18] 
+                                                     comunicación, "lie            [19]
+                                                     detector"
+                                                     
+  Trastornos Mentales      Patrones de EDA            Psiquiatría,              [2][12]
+                                                     neurorehabilitación 
+                                                     GSR-biofeedback
 
+ Biofeedback terapéutico   Control voluntario        Epilepsia, ansiedad,        [1][7][2]
+                           de la respuesta           entrenamiento emocional
+                                                 
   BIBLIOGRAFIA
 [1] Pop-Jordanova, N., & Pop-Jordanov, J. (2020). Electrodermal Activity and Stress Assessment. PRILOZI, 41, 5 - 15. https://doi.org/10.2478/prilozi-2020-0028.
 [2] Markiewicz, R., Markiewicz-Gospodarek, A., & Dobrowolska, B. (2022). Galvanic Skin Response Features in Psychiatry and Mental Disorders: A Narrative Review. International Journal of Environmental Research and Public Health, 19. https://doi.org/10.3390/ijerph192013428.
