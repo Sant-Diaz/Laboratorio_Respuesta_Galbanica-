@@ -221,8 +221,9 @@ Estos valores son:
 
 Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establecidas.
 
-# Preguntas Discusión
+# Preguntas de Discusión
 - ¿A qué se debe que una inspiración profunda incremente la magnitud de la respuesta galvánica cutánea (GSR)?
+Una inspiración profunda provoca un aumento transitorio de la conductancia cutánea. Fisiológicamente, la maniobra altera las presiones intratorácicas y la dinámica ventricular, produciendo una descarga refleja simpática vía barorreceptores, y además interactúa con acoplamientos respiratorios centrales que amplifican la salida simpática sudomotora. El resultado es una mayor secreción por glándulas ecrinas (controladas por fibras simpáticas colinérgicas) y un incremento observable de la GSR con latencia característica de ~1–3 s y pico entre 2–5 s. Componentes atencionales y emocionales asociados a la respiración voluntaria pueden modular aún más esta respuesta
 - ¿Cuáles serían las ventajas y desventajas de utilizar la GSR como indicador de estrés?
                              
  # BIBLIOGRAFIA
