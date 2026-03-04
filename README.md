@@ -18,17 +18,11 @@ La EDA/GSR refleja la inervación simpática de las glándulas sudoríparas ecri
 Es un índice objetivo de activación del sistema nervioso autónomo y de arousal emocional o cognitivo (estrés, atención, ansiedad, carga mental) [1][2][8][12][18].
 
 Usos Principales
-  USO                          Qué se mide               Aplicaciones           Citaciones 
-  Estres y emocion         Cambios en SCL y SCR       Psico/Neurofisiologia,    [1][3][5][18] 
-                                                     comunicación, "lie            [19]
-                                                     detector"
-                                                     
-  Trastornos Mentales      Patrones de EDA            Psiquiatría,              [2][12]
-                                                     neurorehabilitación 
-                                                     GSR-biofeedback
-
- Biofeedback terapéutico   Control voluntario        Epilepsia, ansiedad,        [1][7][2]
-                           de la respuesta           entrenamiento emocional
+ | Uso                    | Qué se mide                     | Aplicaciones                                                              | Citaciones        |
+|:-----------------------|:--------------------------------|:--------------------------------------------------------------------------|:------------------|
+| Estrés y emoción       | Cambios en SCL y SCR            | Psico/Neurofisiología, comunicación, "lie detector"                      | [1][3][5][18][19] |
+| Trastornos mentales    | Patrones de EDA                 | Psiquiatría, neurorehabilitación, GSR-biofeedback                         | [2][12]           |
+| Biofeedback terapéutico| Control voluntario de la respuesta | Epilepsia, ansiedad, entrenamiento emocional                              | [1][7][2]         |
                                                  
   BIBLIOGRAFIA
 [1] Pop-Jordanova, N., & Pop-Jordanov, J. (2020). Electrodermal Activity and Stress Assessment. PRILOZI, 41, 5 - 15. https://doi.org/10.2478/prilozi-2020-0028.
