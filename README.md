@@ -123,51 +123,45 @@ Estos elementos permiten evaluar sistemáticamente el riesgo de choques en insta
 La corriente que circula a través del sujeto está dada por:
 
 <p align="center">
-I = (V<sub>CC</sub> - V<sub>EE</sub>) / (68 kΩ + R<sub>skin</sub>)
+<b>I = (V<sub>CC</sub> − V<sub>EE</sub>) / (68 kΩ + R<sub>skin</sub>)</b>
 </p>
 
 Donde:
 
-- \( V_{CC} - V_{EE} \) es el voltaje de alimentación.
-- 68kΩ es la resistencia fija de protección en serie.
-- \( R_{skin} \) es la resistencia de la piel del sujeto.
-- \( I \) es la corriente que circulará a través del cuerpo.
+- (V<sub>CC</sub> − V<sub>EE</sub>) es el voltaje de alimentación.
+- 68 kΩ es la resistencia fija de protección en serie.
+- R<sub>skin</sub> es la resistencia de la piel del sujeto.
+- I es la corriente que circulará a través del cuerpo.
 
 En nuestro laboratorio se utilizará una fuente de **6 V DC**.
 
 ---
 
-# A. Caso extremo: Resistencia de piel igual a 0 Ω
+# A. Caso extremo: R<sub>skin</sub> = 0 Ω
 
 Se analiza la condición más crítica posible:
 
-\[
-R_{skin} = 0 \Omega
-\]
+<p align="center">
+<b>I = 6 V / 68,000 Ω</b>
+</p>
 
-Entonces la corriente máxima será:
+<p align="center">
+<b>I = 8.82 × 10<sup>-5</sup> A</b>
+</p>
 
-\[
-I = \frac{6V}{68,000\Omega}
-\]
-
-\[
-I = 8.82 \times 10^{-5} A
-\]
-
-\[
-I = 0.088 mA
-\]
+<p align="center">
+<b>I = 0.088 mA</b>
+</p>
 
 ### Resultado
 
 Incluso en el peor escenario (cortocircuito en la piel), la corriente máxima es:
 
-\[
-I_{max} = 0.088 mA
-\]
+<p align="center">
+<b>I<sub>max</sub> = 0.088 mA</b>
+</p>
 
-Este valor es **muy inferior a 1 mA**, que es el límite establecido en el laboratorio.
+Este valor es **muy inferior a 1 mA**, que es el límite establecido.
 
 ---
 
@@ -175,40 +169,31 @@ Este valor es **muy inferior a 1 mA**, que es el límite establecido en el labor
 
 Los electrodos serán colocados en la frente.
 
-La literatura sobre bioinstrumentación y actividad electrodérmica reporta que:
+La literatura de bioinstrumentación reporta que la resistencia piel-electrodo en zonas como la frente puede variar típicamente entre 10 kΩ y 100 kΩ, dependiendo de hidratación, presión de contacto y uso de gel conductor (Webster; Grimnes & Martinsen; IEC 60479-1).
 
-- La resistencia piel-electrodo en zonas como frente o antebrazo puede variar entre **10 kΩ y 100 kΩ**, dependiendo de hidratación y contacto.
-- La impedancia disminuye significativamente cuando se usa gel conductor.
+Para un escenario conservador se asume:
 
-Referencias típicas utilizadas en bioinstrumentación:
-
-- Webster, J. G. *Medical Instrumentation: Application and Design*.
-- Grimnes & Martinsen. *Bioimpedance and Bioelectricity Basics*.
-- IEC 60479-1 (modelos de impedancia del cuerpo humano).
-
-Para un escenario conservador pero realista en la frente, asumimos:
-
-\[
-R_{skin} = 20k\Omega
-\]
+<p align="center">
+<b>R<sub>skin</sub> = 20 kΩ</b>
+</p>
 
 Entonces:
 
-\[
-I = \frac{6V}{68,000\Omega + 20,000\Omega}
-\]
+<p align="center">
+<b>I = 6 V / (68,000 Ω + 20,000 Ω)</b>
+</p>
 
-\[
-I = \frac{6}{88,000}
-\]
+<p align="center">
+<b>I = 6 / 88,000</b>
+</p>
 
-\[
-I = 6.82 \times 10^{-5} A
-\]
+<p align="center">
+<b>I = 6.82 × 10<sup>-5</sup> A</b>
+</p>
 
-\[
-I = 0.068 mA
-\]
+<p align="center">
+<b>I = 0.068 mA</b>
+</p>
 
 ---
 
@@ -216,22 +201,22 @@ I = 0.068 mA
 
 Según IEC 60479-1:
 
-- El umbral de percepción en corriente DC es del orden de 1 mA o mayor.
-- Corrientes menores a 0.5 mA se consideran no perceptibles en la mayoría de los casos.
+- El umbral de percepción en corriente continua está alrededor de 1 mA.
+- Corrientes menores a 0.5 mA generalmente no son perceptibles.
 - El riesgo de fibrilación ventricular ocurre en corrientes mucho mayores (decenas de mA atravesando el tórax).
 
 En nuestro diseño:
 
-- Corriente máxima absoluta: 0.088 mA
-- Corriente real estimada: 0.068 mA
+- Corriente máxima absoluta: 0.088 mA  
+- Corriente real estimada: 0.068 mA  
 
 Estos valores son:
 
-- Más de 10 veces menores que el límite de 1 mA.
-- Muy por debajo del umbral de percepción.
-- Extremadamente alejados de niveles peligrosos.
+- Más de 10 veces menores que 1 mA.
+- Muy inferiores al umbral de percepción.
+- Extremadamente alejados de niveles peligrosos definidos por IEC 60479-1.
 
-Por tanto, el sistema es eléctricamente seguro bajo las condiciones establecidas.
+Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establecidas.
                              
  # BIBLIOGRAFIA
 - [1] Pop-Jordanova, N., & Pop-Jordanov, J. (2020). Electrodermal Activity and Stress Assessment. PRILOZI, 41, 5 - 15. https://doi.org/10.2478/prilozi-2020-0028.
