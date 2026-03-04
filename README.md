@@ -39,7 +39,7 @@ Usos Principales
 | Trastornos mentales    | Patrones de EDA                 | Psiquiatría, neurorehabilitación, GSR-biofeedback                         | [2][12]           |
 | Biofeedback terapéutico| Control voluntario de la respuesta | Epilepsia, ansiedad, entrenamiento emocional                              | [1][7][2]         |
                                                  
-  BIBLIOGRAFIA
+ # BIBLIOGRAFIA
 [1] Pop-Jordanova, N., & Pop-Jordanov, J. (2020). Electrodermal Activity and Stress Assessment. PRILOZI, 41, 5 - 15. https://doi.org/10.2478/prilozi-2020-0028.
 [2] Markiewicz, R., Markiewicz-Gospodarek, A., & Dobrowolska, B. (2022). Galvanic Skin Response Features in Psychiatry and Mental Disorders: A Narrative Review. International Journal of Environmental Research and Public Health, 19. https://doi.org/10.3390/ijerph192013428.
 [3] Posada-Quintero, H., & Chon, K. (2020). Innovations in Electrodermal Activity Data Collection and Signal Processing: A Systematic Review. Sensors (Basel, Switzerland), 20. https://doi.org/10.3390/s20020479.
