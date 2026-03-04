@@ -53,7 +53,11 @@ Usos Principales
 | Trastornos mentales    | Patrones de EDA                 | Psiquiatría, neurorehabilitación, GSR-biofeedback                         | [2][12]           |
 | Biofeedback terapéutico| Control voluntario de la respuesta | Epilepsia, ansiedad, entrenamiento emocional                              | [1][7][2]         |
 
-**Figura 3.** Usos Principales 
+<p align="center">
+  <em>Figura 3. Usos Principales .</em>
+</p>
+
+
 # Efectos de la corriente eléctrica en el ser humano según IEC 60479 (ítems 1-5)
 
 La norma IEC 60479-1 describe cómo la intensidad, tipo de corriente (CC/CA), frecuencia, trayectoria a través del cuerpo y duración determinan el daño: desde sensación apenas perceptible hasta fibrilación ventricular y muerte 3697.
