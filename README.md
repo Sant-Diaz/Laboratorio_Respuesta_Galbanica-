@@ -54,7 +54,7 @@ Usos Principales
 | Biofeedback terapéutico| Control voluntario de la respuesta | Epilepsia, ansiedad, entrenamiento emocional                              | [1][7][2]         |
 
 <p align="center">
-  <em>Figura 3. Usos Principales .</em>
+  <em>Figura 3. Usos Principales para la señal EDA/GSR</em>
 </p>
 
 
