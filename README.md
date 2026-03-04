@@ -52,6 +52,7 @@ Usos Principales
 | Estrés y emoción       | Cambios en SCL y SCR            | Psico/Neurofisiología, comunicación, "lie detector"                      | [1][3][5][18][19] |
 | Trastornos mentales    | Patrones de EDA                 | Psiquiatría, neurorehabilitación, GSR-biofeedback                         | [2][12]           |
 | Biofeedback terapéutico| Control voluntario de la respuesta | Epilepsia, ansiedad, entrenamiento emocional                              | [1][7][2]         |
+
 **Figura 3.** Usos Principales 
 # Efectos de la corriente eléctrica en el ser humano según IEC 60479 (ítems 1-5)
 
