@@ -1,20 +1,35 @@
-# Laboratorio_Respuesta_Galbanica #
-Actividad Electrodermica 
-/n La actividad electrodermica (AED/EDA) y la respuesta galvanica cutanea (GSR) se refieren a cambios en las propiedades electricas de la piel causados por la actividad de las glandulas sudoriparas bajo control del sistema simpatico. Son esencialmente el mismo fenomeno medido y nombrado de formas ligeramente distintas. 
+# Laboratorio_Respuesta_Galbanica
 
-Conceptos Basicos 
-- Actividad electrodérmica (EDA)
-  Es cualquier fenomeno electrico observable en la piel, normalmente medido como conductancia cutanea(cuanta corriente pasa) o resistencia cutanea (cuanto se opone) [3][8][10].
-  Estos cmabios se deben a la sudoracion: mas sudos(agua con sales) ---> Mayor conductancia, menor resistencia[3][19].
-  
-- Respuesta Galvanica Cutanea (GSR)
- Es el nombre clasico para las variaciones rapidas y trasnsitorias de la EDA ante estimulos emocionales o cognitivos(sonidos, imagenes, pensamientos, estres, miedo, atencion)[1][2][5][10]. 
+## Actividad Electrodermica
+
+La actividad electrodermica (AED/EDA) y la respuesta galvanica cutanea (GSR) se refieren a cambios en las propiedades electricas de la piel causados por la actividad de las glandulas sudoriparas bajo control del sistema simpatico. Son esencialmente el mismo fenomeno medido y nombrado de formas ligeramente distintas. 
+
+---
+
+## Conceptos Basicos 
+
+### Actividad electrodérmica (EDA)
+
+Es cualquier fenomeno electrico observable en la piel, normalmente medido como conductancia cutanea (cuanta corriente pasa) o resistencia cutanea (cuanto se opone) [3][8][10].  
+Estos cmabios se deben a la sudoracion: mas sudos (agua con sales) ---> Mayor conductancia, menor resistencia [3][19].
+
+---
+
+### Respuesta Galvanica Cutanea (GSR)
+
+Es el nombre clasico para las variaciones rapidas y trasnsitorias de la EDA ante estimulos emocionales o cognitivos (sonidos, imagenes, pensamientos, estres, miedo, atencion) [1][2][5][10].
+
 Suele Descomponerse en:
-  Nivel de conductancia cutánea (SCL): componente tónico, de fondo, más lento[2][18].
-  Respuestas de conductancia cutánea (SCR): picos rápidos ligados a estímulos concretos[2][10][20].
-  
-Base fisiológica y qué indica
+
+- Nivel de conductancia cutánea (SCL): componente tónico, de fondo, más lento [2][18].
+- Respuestas de conductancia cutánea (SCR): picos rápidos ligados a estímulos concretos [2][10][20].
+
+---
+
+## Base fisiológica y qué indica
+
 La EDA/GSR refleja la inervación simpática de las glándulas sudoríparas ecrinas, especialmente en palmas y plantas, muy sensibles a estímulos psicológicos más que térmicos [3][10][20].
+
 Es un índice objetivo de activación del sistema nervioso autónomo y de arousal emocional o cognitivo (estrés, atención, ansiedad, carga mental) [1][2][8][12][18].
 
 Usos Principales
