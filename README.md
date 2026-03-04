@@ -38,6 +38,13 @@ Suele Descomponerse en:
 La EDA/GSR refleja la inervación simpática de las glándulas sudoríparas ecrinas, especialmente en palmas y plantas, muy sensibles a estímulos psicológicos más que térmicos [3][10][20].
 
 Es un índice objetivo de activación del sistema nervioso autónomo y de arousal emocional o cognitivo (estrés, atención, ansiedad, carga mental) [1][2][8][12][18].
+<p align="center">
+  <img src="Imagen_3.png" width="200">
+</p>
+
+<p align="center">
+  <em>Figura 1. Forma de onda típica de la señal EDA.</em>
+</p>
 
 Usos Principales
  | Uso                    | Qué se mide                     | Aplicaciones                                                              | Citaciones        |
