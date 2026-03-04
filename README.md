@@ -222,9 +222,10 @@ Estos valores son:
 Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establecidas.
 
 # Preguntas de Discusión
-- **¿A qué se debe que una inspiración profunda incremente la magnitud de la respuesta galvánica cutánea (GSR)?**
+- **¿A qué se debe que una inspiración profunda incremente la magnitud de la respuesta galvánica cutánea (GSR)?:**
 Una inspiración profunda provoca un aumento transitorio de la conductancia cutánea. Fisiológicamente, la maniobra altera las presiones intratorácicas y la dinámica ventricular, produciendo una descarga refleja simpática vía barorreceptores, y además interactúa con acoplamientos respiratorios centrales que amplifican la salida simpática sudomotora. El resultado es una mayor secreción por glándulas ecrinas (controladas por fibras simpáticas colinérgicas) y un incremento observable de la GSR con latencia característica de ~1–3 s y pico entre 2–5 s. Componentes atencionales y emocionales asociados a la respiración voluntaria pueden modular aún más esta respuesta
-- ¿Cuáles serían las ventajas y desventajas de utilizar la GSR como indicador de estrés?
+- **¿Cuáles serían las ventajas y desventajas de utilizar la GSR como indicador de estrés?:**
+La GSR es un marcador sensible y con alta resolución temporal de la activación simpática aguda, útil para detectar cambios de arousal inducidos por estímulos o tareas. Sin embargo, su baja especificidad frente a distintas fuentes de activación (emocionales, térmicas, motoras), la variabilidad individual y la susceptibilidad a artefactos y condiciones ambientales limitan su uso como único indicador de ‘estrés’. Recomendamos emplearla junto con otras medidas autonómicas, endocrinas y autoinforme para una inferencia válida sobre el estrés.
                              
  # BIBLIOGRAFIA
 - [1] Pop-Jordanova, N., & Pop-Jordanov, J. (2020). Electrodermal Activity and Stress Assessment. PRILOZI, 41, 5 - 15. https://doi.org/10.2478/prilozi-2020-0028.
