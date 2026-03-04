@@ -220,6 +220,10 @@ Estos valores son:
 - Extremadamente alejados de niveles peligrosos definidos por IEC 60479-1.
 
 Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establecidas.
+
+# Preguntas Discusión
+- ¿A qué se debe que una inspiración profunda incremente la magnitud de la respuesta galvánica cutánea (GSR)?
+- ¿Cuáles serían las ventajas y desventajas de utilizar la GSR como indicador de estrés?
                              
  # BIBLIOGRAFIA
 - [1] Pop-Jordanova, N., & Pop-Jordanov, J. (2020). Electrodermal Activity and Stress Assessment. PRILOZI, 41, 5 - 15. https://doi.org/10.2478/prilozi-2020-0028.
