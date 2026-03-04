@@ -38,7 +38,66 @@ Usos Principales
 | Estrés y emoción       | Cambios en SCL y SCR            | Psico/Neurofisiología, comunicación, "lie detector"                      | [1][3][5][18][19] |
 | Trastornos mentales    | Patrones de EDA                 | Psiquiatría, neurorehabilitación, GSR-biofeedback                         | [2][12]           |
 | Biofeedback terapéutico| Control voluntario de la respuesta | Epilepsia, ansiedad, entrenamiento emocional                              | [1][7][2]         |
-                                                 
+
+# Efectos de la corriente eléctrica en el ser humano según IEC 60479 (ítems 1-5)
+
+La norma IEC 60479-1 describe cómo la intensidad, tipo de corriente (CC/CA), frecuencia, trayectoria a través del cuerpo y duración determinan el daño: desde sensación apenas perceptible hasta fibrilación ventricular y muerte 3697.
+
+---
+
+## Factores generales (aplica a CA y CC)
+
+- El riesgo se relaciona con la corriente que atraviesa el cuerpo, no solo con el voltaje; esta depende de la impedancia corporal (piel, tejidos, humedad, área de contacto) 367.  
+- Corrientes que cruzan el tórax y el corazón (por ejemplo, mano-mano, mano-pies) tienen mucha mayor probabilidad de producir fibrilación ventricular (FV) que trayectorias solo entre pies 67.  
+- IEC 60479-1 usa curvas corriente-tiempo para delimitar zonas de: no percepción, percepción, tetania/dificultad para soltar y riesgo de FV 367.
+
+---
+
+## Corriente alterna (CA, 15–100 Hz, p.ej. 50/60 Hz de red)
+
+Las curvas de IEC 60479-1 para CA de baja frecuencia muestran que 369:
+
+| Rango de corriente (mano-mano, adulto) | Efectos típicos | Citaciones |
+|----------------------------------------|-----------------|------------|
+| ~0,5–1 mA | Umbral de percepción (hormigueo) | 326 |
+| 5–10 mA | Dolor notable; comienzo de contracción muscular | 3269 |
+| 10–30 mA | Tetania; posible imposibilidad de “soltar” el conductor | 36 |
+| 30–50 mA | Dificultad respiratoria; riesgo creciente para el corazón | 369 |
+| ≥50–100 mA (≈100 ms o más) | Alto riesgo de fibrilación ventricular y muerte | 368 |
+
+**Figura 1.** Rangos típicos de corrientes y efectos en CA 50/60 Hz.
+
+- La probabilidad de FV aumenta con la corriente y con la duración del choque; IEC 60479-1 define factores de “corriente de corazón” (heart current factors) para distintos recorridos 6.  
+- La CA de 50/60 Hz es especialmente peligrosa para el corazón (más eficaz en inducir FV que otras frecuencias) 369.
+
+---
+
+## Corriente continua (CC, DC)
+
+IEC 60479 también da límites para CC, pero la respuesta fisiológica difiere 3176:
+
+- El umbral de percepción puede ser algo mayor que en CA; la contracción muscular sostenida es frecuente, pero la tendencia a FV es diferente 36.  
+- Por encima de unos pocos decenas de mA de CC pueden aparecer quemaduras, contracciones musculares dolorosas, parálisis respiratoria y, a intensidades elevadas, paro cardiaco (por FV o asistolia) 317.  
+- Estudios de lesiones por CC muestran quemaduras y lesiones neurológicas importantes incluso cuando la FV no es el principal desenlace 17.  
+- Modelos basados en IEC 60479 se usan para estimar la impedancia del cuerpo en choques CC y CA y así definir dispositivos de protección (disyuntores diferenciales, detectores de corriente de fuga, etc.) 311.
+
+---
+
+## Resumen conceptual de los ítems 1-5 de IEC 60479-1
+
+Basados en la literatura que cita directamente IEC 60479-1 3697:
+
+- **Aspectos generales:** define modelos de impedancia del cuerpo y factores que influyen (tensión de contacto, humedad, área y trayectoria de contacto, frecuencia).  
+- **Curvas de corriente-tiempo:** zonas sin efecto, con efectos reversibles, y con probabilidad creciente de FV.  
+- **Corriente de corazón (heart current factors):** coeficientes que ajustan la corriente medida a la fracción que realmente atraviesa el corazón según la trayectoria 6.  
+- **Diferencias CA/CC y con la frecuencia:** la CA 15–100 Hz tiene máxima eficacia fibrilante; CC y frecuencias altas se tratan con límites específicos 3689.  
+- **Aplicación a seguridad:** la norma sirve de base para calcular tensiones de contacto seguras, tiempos máximos de desconexión y diseño de sistemas de puesta a tierra y protección 3711.
+
+---
+
+Estos elementos permiten evaluar sistemáticamente el riesgo de choques en instalaciones eléctricas y definir medidas de protección para personas.
+
+                             
  # BIBLIOGRAFIA
 - [1] Pop-Jordanova, N., & Pop-Jordanov, J. (2020). Electrodermal Activity and Stress Assessment. PRILOZI, 41, 5 - 15. https://doi.org/10.2478/prilozi-2020-0028.
 - [2] Markiewicz, R., Markiewicz-Gospodarek, A., & Dobrowolska, B. (2022). Galvanic Skin Response Features in Psychiatry and Mental Disorders: A Narrative Review. International Journal of Environmental Research and Public Health, 19. https://doi.org/10.3390/ijerph192013428.
