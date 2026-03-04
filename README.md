@@ -39,7 +39,7 @@ La EDA/GSR refleja la inervación simpática de las glándulas sudoríparas ecri
 
 Es un índice objetivo de activación del sistema nervioso autónomo y de arousal emocional o cognitivo (estrés, atención, ansiedad, carga mental) [1][2][8][12][18].
 <p align="center">
-  <img src="Imagen_3.png" width="200">
+  <img src="Imagen_3.png" width="500">
 </p>
 
 <p align="center">
