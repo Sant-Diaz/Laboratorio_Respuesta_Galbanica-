@@ -264,6 +264,30 @@ Estos valores son:
 
 Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establecidas.
 # MONTAJE 
+<p align="center">
+  <img src="Imagen_2.png" width="500">
+</p>
+<p align="center">
+  <em>Figura 6. Montaje General.</em>
+</p>
+
+
+<p align="center">
+  <img src="Imagen_2.png" width="500">
+</p>
+
+<p align="center">
+  <em>Figura 7. Montaje Electrodos.</em>
+</p>
+
+<p align="center">
+  <img src="Imagen_2.png" width="500">
+</p>
+
+<p align="center">
+  <em>Figura 8. Montaje Electrodos 2.</em>
+</p>
+
 # CODIGO
 # TOMA DE DATOS
 <p align="center">
@@ -271,7 +295,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-  <em>Figura 6. Adquisición de la señal.</em>
+  <em>Figura . Adquisición de la señal.</em>
 </p>
 
 # Preguntas de Discusión
