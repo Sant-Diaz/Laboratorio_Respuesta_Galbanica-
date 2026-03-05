@@ -378,7 +378,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="40%">
 
 <p align="center">
-<img src="Captura de pantalla 2026-03-04 232112.png" width="800">
+<img src="Captura de pantalla 2026-03-04 232450.png" width="800">
 </p>
 
 <p align="center">
@@ -390,11 +390,50 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="60%">
 
 ### Descripción
-> En esta sección del código se definen las variables de control necesarias para gestionar la adquisición y visualización de los datos. Se inicializan variables para almacenar el tiempo inicial de referencia, el último nivel fisiológico detectado y el control de actualización de la gráfica. Además, se crean buffers para almacenar temporalmente los valores de tiempo y voltaje que serán utilizados en la visualización de la señal. Posteriormente, se inicia el bucle principal del programa, el cual se ejecuta mientras la ventana de la gráfica permanezca abierta. Dentro de este bucle se verifica la disponibilidad de datos en el puerto serial; si no hay datos disponibles se realiza una breve pausa para evitar consumo innecesario de recursos. Cuando se reciben datos, estos se leen desde el puerto serial, se convierten a texto y se separan en líneas individuales para su posterior procesamiento.
-
+> En esta sección del código se procesan las líneas de información recibidas desde el sistema embebido a través de la comunicación serial. Primero se identifican posibles mensajes del sistema relacionados con el estado del proceso, como el inicio de la calibración, el cálculo de umbrales o la indicación de que el sistema está listo para comenzar la adquisición de datos, mostrando estos eventos en la consola para informar al usuario. Posteriormente, cuando la línea recibida corresponde a datos numéricos, esta se divide en sus diferentes componentes utilizando la coma como separador. A partir de estos valores se extraen el tiempo en milisegundos, el voltaje medido y el nivel fisiológico detectado. Además, se verifica la validez de los datos para evitar valores incorrectos y se establece un tiempo inicial de referencia que permite convertir los tiempos registrados a segundos relativos, facilitando su posterior visualización y análisis.
 </td>
 </tr>
 </table>
+
+
+
+
+
+
+
+
+
+
+<table>
+<tr>
+<td width="40%">
+
+<p align="center">
+<img src="Captura de pantalla 2026-03-04 232450.png" width="800">
+</p>
+
+<p align="center">
+<em>Figura 9. Montaje General.</em>
+</p>
+
+</td>
+
+<td width="60%">
+
+### Descripción
+> En esta sección del código se procesan las líneas de información recibidas desde el sistema embebido a través de la comunicación serial. Primero se identifican posibles mensajes del sistema relacionados con el estado del proceso, como el inicio de la calibración, el cálculo de umbrales o la indicación de que el sistema está listo para comenzar la adquisición de datos, mostrando estos eventos en la consola para informar al usuario. Posteriormente, cuando la línea recibida corresponde a datos numéricos, esta se divide en sus diferentes componentes utilizando la coma como separador. A partir de estos valores se extraen el tiempo en milisegundos, el voltaje medido y el nivel fisiológico detectado. Además, se verifica la validez de los datos para evitar valores incorrectos y se establece un tiempo inicial de referencia que permite convertir los tiempos registrados a segundos relativos, facilitando su posterior visualización y análisis.
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
 
 
 
