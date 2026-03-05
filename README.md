@@ -83,7 +83,10 @@ Estudios que comparan ubicaciones para conductancia cutánea muestran:
 | Frente                        | Poco fiable                            | Alta tasa de sudor, pero baja correlación con EDA emocional  |
 | Espalda / pecho               | Baja reactividad                       | No recomendadas como sustituto de dedos                      |
 
-**Figura 4.** Comparación de localizaciones para medir EDA.
+<p align="center">
+  <em>Figura 4. Comparación de localizaciones para medir EDA.</em>
+</p>
+
 
 ---
 
