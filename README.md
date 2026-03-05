@@ -409,7 +409,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="40%">
 
 <p align="center">
-<img src="Captura de pantalla 2026-03-04 232450.png" width="800">
+<img src="Captura de pantalla 2026-03-04 232809.png" width="800">
 </p>
 
 <p align="center">
@@ -421,7 +421,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="60%">
 
 ### Descripción
-> En esta sección del código se procesan las líneas de información recibidas desde el sistema embebido a través de la comunicación serial. Primero se identifican posibles mensajes del sistema relacionados con el estado del proceso, como el inicio de la calibración, el cálculo de umbrales o la indicación de que el sistema está listo para comenzar la adquisición de datos, mostrando estos eventos en la consola para informar al usuario. Posteriormente, cuando la línea recibida corresponde a datos numéricos, esta se divide en sus diferentes componentes utilizando la coma como separador. A partir de estos valores se extraen el tiempo en milisegundos, el voltaje medido y el nivel fisiológico detectado. Además, se verifica la validez de los datos para evitar valores incorrectos y se establece un tiempo inicial de referencia que permite convertir los tiempos registrados a segundos relativos, facilitando su posterior visualización y análisis.
+> En esta sección del código se almacenan y gestionan los datos válidos obtenidos durante la adquisición de la señal. Primero, cada muestra recibida se guarda en el archivo CSV junto con su tiempo en milisegundos, el tiempo relativo en segundos, el voltaje medido y el nivel fisiológico detectado, permitiendo conservar un registro completo de la señal para análisis posterior. Posteriormente, los valores de tiempo y voltaje se almacenan temporalmente en buffers que serán utilizados para la visualización de la señal en la gráfica en tiempo real. Finalmente, el programa verifica si el nivel fisiológico detectado ha cambiado con respecto al anterior; si ocurre un cambio, se muestra en la consola una notificación indicando el nuevo estado fisiológico, clasificado como bajo, moderado o alto, junto con una breve interpretación del estado de activación fisiológica del usuario.
 </td>
 </tr>
 </table>
