@@ -261,7 +261,7 @@ Estos valores son:
 
 Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establecidas.
 # MONTAJE 
-# Codigo 
+# CODIGO
 # TOMA DE DATOS
 
 # Preguntas de Discusión
