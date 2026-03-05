@@ -708,7 +708,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-  <em>Figura . Adquisición de la señal.</em>
+  <em>Figura 21. Adquisición de la señal.</em>
 </p>
 
 # Preguntas de Discusión
