@@ -211,11 +211,11 @@ Este valor es **muy inferior a 1 mA**, que es el límite establecido.
 
 ---
 
-# B. Caso real: Resistencia de piel en la frente
+# B. Caso real: Resistencia de piel en la Muñeca Interna 
 
-Los electrodos serán colocados en la frente.
+Los electrodos serán colocados en la muñeca en la cara interna.
 
-La literatura de bioinstrumentación reporta que la resistencia piel-electrodo en zonas como la frente puede variar típicamente entre 10 kΩ y 100 kΩ, dependiendo de hidratación, presión de contacto y uso de gel conductor (Webster; Grimnes & Martinsen; IEC 60479-1).
+La literatura de bioinstrumentación reporta que la resistencia piel-electrodo en zonas como muñeca puede variar típicamente entre 10 kΩ y 100 kΩ, dependiendo de hidratación, presión de contacto y uso de gel conductor (Webster; Grimnes & Martinsen; IEC 60479-1).
 
 Para un escenario conservador se asume:
 
@@ -710,13 +710,17 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <p align="center">
   <em>Figura 21. Adquisición de la señal.</em>
 </p>
+En la gráfica se evidencia una fase inicial de estabilización y establecimiento de línea base durante los primeros ~30 s, con un voltaje cercano a 0.85–0.90 V y variaciones pequeñas. Este segmento es adecuado para fijar el nivel tónico (basal) de la conductancia cutánea, ya que presenta baja dispersión y permite referenciar el resto del registro frente a un estado inicial de estrés moderado/neutral. A partir de esa base, la señal mantiene un componente tónico que representa el “nivel general” de activación del sujeto, sobre el cual se superponen cambios transitorios de mayor amplitud.
+
+La etapa de respiración utilizada para estimar rangos de estrés se observa aproximadamente entre 35 y 80 s. En este intervalo la señal presenta un aumento rápido (respuesta fásica) que alcanza su máximo cerca de los 50–55 s (1.2–1.25 V), valor que puede tomarse como referencia de estrés alto para esa calibración; idealmente como incremento respecto a la línea base. Posteriormente se observa una disminución gradual hacia valores cercanos a 1.05–1.10 V hacia el final del intervalo, lo cual puede emplearse como referencia de estrés bajo o recuperación dentro del protocolo. Con estos dos puntos (máximo alcanzado y nivel mínimo/recuperación dentro de 35–80 s) se definen umbrales prácticos para clasificar el estado del sujeto durante el resto del registro.
 
 # Preguntas de Discusión
 - **¿A qué se debe que una inspiración profunda incremente la magnitud de la respuesta galvánica cutánea (GSR)?:**
 Una inspiración profunda provoca un aumento transitorio de la conductancia cutánea. Fisiológicamente, la maniobra altera las presiones intratorácicas y la dinámica ventricular, produciendo una descarga refleja simpática vía barorreceptores, y además interactúa con acoplamientos respiratorios centrales que amplifican la salida simpática sudomotora. El resultado es una mayor secreción por glándulas ecrinas (controladas por fibras simpáticas colinérgicas) y un incremento observable de la GSR con latencia característica de ~1–3 s y pico entre 2–5 s. Componentes atencionales y emocionales asociados a la respiración voluntaria pueden modular aún más esta respuesta
 - **¿Cuáles serían las ventajas y desventajas de utilizar la GSR como indicador de estrés?:**
 La GSR es un marcador sensible y con alta resolución temporal de la activación simpática aguda, útil para detectar cambios de arousal inducidos por estímulos o tareas. Sin embargo, su baja especificidad frente a distintas fuentes de activación (emocionales, térmicas, motoras), la variabilidad individual y la susceptibilidad a artefactos y condiciones ambientales limitan su uso como único indicador de ‘estrés’. Recomendamos emplearla junto con otras medidas autonómicas, endocrinas y autoinforme para una inferencia válida sobre el estrés.
-                             
+# CONCLUSIONES 
+
  # BIBLIOGRAFIA
 - [1] Pop-Jordanova, N., & Pop-Jordanov, J. (2020). Electrodermal Activity and Stress Assessment. PRILOZI, 41, 5 - 15. https://doi.org/10.2478/prilozi-2020-0028.
 - [2] Markiewicz, R., Markiewicz-Gospodarek, A., & Dobrowolska, B. (2022). Galvanic Skin Response Features in Psychiatry and Mental Disorders: A Narrative Review. International Journal of Environmental Research and Public Health, 19. https://doi.org/10.3390/ijerph192013428.
