@@ -263,6 +263,13 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 # MONTAJE 
 # CODIGO
 # TOMA DE DATOS
+<p align="center">
+  <img src="Imagen_4.png" width="500">
+</p>
+
+<p align="center">
+  <em>Figura 1. Forma de onda típica de la señal EDA.</em>
+</p>
 
 # Preguntas de Discusión
 - **¿A qué se debe que una inspiración profunda incremente la magnitud de la respuesta galvánica cutánea (GSR)?:**
