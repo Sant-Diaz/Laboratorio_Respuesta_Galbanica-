@@ -340,6 +340,45 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 
 
 
+
+
+<table>
+<tr>
+<td width="40%">
+
+<p align="center">
+<img src="Captura de pantalla 2026-03-04 225717.png" width="800">
+</p>
+
+<p align="center">
+<em>Figura 9. Montaje General.</em>
+</p>
+
+</td>
+
+<td width="60%">
+
+### Descripción
+> En esta sección del código se establece la comunicación serial entre MATLAB y el sistema embebido encargado de adquirir la señal GSR, configurando el puerto y la velocidad de transmisión previamente definidos. Se limpia el búfer de comunicación para evitar datos residuales y se ajusta el tiempo máximo de espera para la recepción de información. Posteriormente, se envía un comando al dispositivo para iniciar el proceso de calibración, el cual incluye una fase inicial de reposo seguida de una fase de respiración controlada, permitiendo determinar condiciones de referencia para la señal. Finalmente, se configura la interfaz gráfica donde se visualizarán los datos en tiempo real, definiendo los ejes, el título de la gráfica y los límites de visualización del voltaje y del intervalo de tiempo mostrado.
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # TOMA DE DATOS
 <p align="center">
   <img src="Imagen_4.png" width="1000">
