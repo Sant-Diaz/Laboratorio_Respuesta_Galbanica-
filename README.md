@@ -264,13 +264,33 @@ Estos valores son:
 
 Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establecidas.
 # MONTAJE 
+<table>
+<tr>
+<td width="40%">
+
 <p align="center">
-  <img src="Imagen_5.jpeg" width="300">
-</p>
-<p align="center">
-  <em>Figura 6. Montaje General.</em>
+<img src="Imagen_5.jpeg" width="300">
 </p>
 
+<p align="center">
+<em>Figura 6. Montaje General.</em>
+</p>
+
+</td>
+
+<td width="60%">
+
+### Descripción del montaje
+
+El sistema de adquisición de conductancia cutánea se implementó utilizando un microcontrolador encargado de medir las variaciones de voltaje producidas por la respuesta galvánica de la piel (GSR).  
+
+La señal es adquirida mediante un circuito de acondicionamiento conectado a electrodos ubicados en la superficie de la piel. Estas variaciones de voltaje son enviadas al sistema embebido, el cual procesa la señal y transmite los datos al computador a través de comunicación serial.  
+
+Posteriormente, los datos son visualizados en tiempo real mediante MATLAB, donde también se almacenan para su análisis posterior.
+
+</td>
+</tr>
+</table>
 
 <p align="center">
   <img src="Imagen_6.jpeg" width="300">
