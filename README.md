@@ -559,7 +559,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="40%">
 
 <p align="center">
-<img src="Captura de pantalla 2026-03-04 233657.png" width="800">
+<img src="Captura de pantalla 2026-03-04 234405.png" width="800">
 </p>
 
 <p align="center">
@@ -571,15 +571,62 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="60%">
 
 ### Descripción
-> En esta sección inicial del código se configuran los elementos necesarios para la adquisición de la señal GSR utilizando el microcontrolador ESP32. Primero se incluye la biblioteca **BluetoothSerial**, la cual permite establecer comunicación inalámbrica entre el ESP32 y el computador mediante Bluetooth. Posteriormente se define el nombre del dispositivo Bluetooth para su identificación durante la conexión.
+> En esta sección del código se implementan funciones relacionadas con la clasificación de la señal y la inicialización del sistema en el ESP32. Primero se utiliza una función de clasificación con histéresis que determina el nivel fisiológico de la señal a partir del voltaje medido y del estado previo, permitiendo identificar transiciones entre niveles bajo, moderado y alto sin que se produzcan cambios inestables debido a pequeñas fluctuaciones de la señal.
 >
-> A continuación, se configuran los parámetros de adquisición de la señal, incluyendo el pin analógico utilizado para leer el sensor, la frecuencia de muestreo del sistema y el intervalo de tiempo entre muestras. También se establece un número de muestras utilizadas para calcular un promedio de la lectura del ADC, lo que permite reducir el ruido de la señal antes de enviarla al sistema de visualización.
+> Posteriormente se define una función encargada de iniciar el proceso de calibración del sistema. En esta etapa se reinician las variables utilizadas para calcular los valores de referencia de la señal, incluyendo el voltaje base, los valores mínimo y máximo registrados durante la calibración y los umbrales que posteriormente se emplearán para la clasificación de los niveles fisiológicos. Además, se envía un mensaje mediante Bluetooth indicando el inicio de la fase de calibración en reposo.
 >
-> Posteriormente se define una máquina de estados que controla las diferentes etapas del sistema, como reposo, calibración durante la respiración y ejecución normal del monitoreo. Finalmente, se inicializan las variables necesarias para el proceso de calibración, incluyendo valores de referencia de voltaje, los umbrales utilizados para clasificar los niveles fisiológicos de la señal y un parámetro de histéresis que evita cambios abruptos o inestables en la clasificación del nivel detectado.
+> Finalmente, en la función de configuración inicial del microcontrolador se establecen los parámetros básicos del sistema, como la velocidad de comunicación serial y la resolución del convertidor analógico-digital. También se inicia la comunicación Bluetooth con el nombre previamente definido para el dispositivo. Una vez establecida la conexión, el sistema queda en estado de espera y envía un mensaje indicando que está listo para comenzar el proceso de calibración cuando reciba el comando correspondiente.
+
 
 </td>
 </tr>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+<table>
+<tr>
+<td width="40%">
+
+<p align="center">
+<img src="Captura de pantalla 2026-03-04 234405.png" width="800">
+</p>
+
+<p align="center">
+<em>Figura 9. Montaje General.</em>
+</p>
+
+</td>
+
+<td width="60%">
+
+### Descripción
+> En esta sección del código se implementan funciones relacionadas con la clasificación de la señal y la inicialización del sistema en el ESP32. Primero se utiliza una función de clasificación con histéresis que determina el nivel fisiológico de la señal a partir del voltaje medido y del estado previo, permitiendo identificar transiciones entre niveles bajo, moderado y alto sin que se produzcan cambios inestables debido a pequeñas fluctuaciones de la señal.
+>
+> Posteriormente se define una función encargada de iniciar el proceso de calibración del sistema. En esta etapa se reinician las variables utilizadas para calcular los valores de referencia de la señal, incluyendo el voltaje base, los valores mínimo y máximo registrados durante la calibración y los umbrales que posteriormente se emplearán para la clasificación de los niveles fisiológicos. Además, se envía un mensaje mediante Bluetooth indicando el inicio de la fase de calibración en reposo.
+>
+> Finalmente, en la función de configuración inicial del microcontrolador se establecen los parámetros básicos del sistema, como la velocidad de comunicación serial y la resolución del convertidor analógico-digital. También se inicia la comunicación Bluetooth con el nombre previamente definido para el dispositivo. Una vez establecida la conexión, el sistema queda en estado de espera y envía un mensaje indicando que está listo para comenzar el proceso de calibración cuando reciba el comando correspondiente.
+
+
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
 
 
 
