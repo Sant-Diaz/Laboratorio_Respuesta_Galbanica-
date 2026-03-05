@@ -499,7 +499,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="40%">
 
 <p align="center">
-<img src="Captura de pantalla 2026-03-04 233238.png" width="800">
+<img src="Captura de pantalla 2026-03-04 233657.png" width="800">
 </p>
 
 <p align="center">
@@ -511,10 +511,80 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="60%">
 
 ### Descripción
-> En esta sección final del código se realiza el cierre adecuado del proceso de adquisición de datos. Primero se cierra el archivo CSV donde se almacenaron las mediciones, asegurando que toda la información registrada quede correctamente guardada. Posteriormente se muestran en la consola mensajes que indican la finalización del proceso y la ubicación del archivo generado. Luego, el programa intenta guardar la gráfica obtenida durante la adquisición en dos formatos: una imagen en formato PNG para su visualización o inclusión en informes, y un archivo en formato FIG que permite reabrir y modificar la gráfica posteriormente en MATLAB. Finalmente, se libera la conexión con el puerto serial utilizado para la comunicación con el sistema embebido, cerrando así completamente la ejecución del programa.
+> En esta sección inicial del código se configuran los elementos necesarios para la adquisición de la señal GSR utilizando el microcontrolador ESP32. Primero se incluye la biblioteca **BluetoothSerial**, la cual permite establecer comunicación inalámbrica entre el ESP32 y el computador mediante Bluetooth. Posteriormente se define el nombre del dispositivo Bluetooth para su identificación durante la conexión.
+>
+> A continuación, se configuran los parámetros de adquisición de la señal, incluyendo el pin analógico utilizado para leer el sensor, la frecuencia de muestreo del sistema y el intervalo de tiempo entre muestras. También se establece un número de muestras utilizadas para calcular un promedio de la lectura del ADC, lo que permite reducir el ruido de la señal antes de enviarla al sistema de visualización.
+>
+> Posteriormente se define una máquina de estados que controla las diferentes etapas del sistema, como reposo, calibración durante la respiración y ejecución normal del monitoreo. Finalmente, se inicializan las variables necesarias para el proceso de calibración, incluyendo valores de referencia de voltaje, los umbrales utilizados para clasificar los niveles fisiológicos de la señal y un parámetro de histéresis que evita cambios abruptos o inestables en la clasificación del nivel detectado.
+
 </td>
 </tr>
 </table>
+
+
+<table>
+<tr>
+<td width="40%">
+
+<p align="center">
+<img src="Captura de pantalla 2026-03-04 233657.png" width="800">
+</p>
+
+<p align="center">
+<em>Figura 9. Montaje General.</em>
+</p>
+
+</td>
+
+<td width="60%">
+
+### Descripción
+> En esta sección inicial del código se configuran los elementos necesarios para la adquisición de la señal GSR utilizando el microcontrolador ESP32. Primero se incluye la biblioteca **BluetoothSerial**, la cual permite establecer comunicación inalámbrica entre el ESP32 y el computador mediante Bluetooth. Posteriormente se define el nombre del dispositivo Bluetooth para su identificación durante la conexión.
+>
+> A continuación, se configuran los parámetros de adquisición de la señal, incluyendo el pin analógico utilizado para leer el sensor, la frecuencia de muestreo del sistema y el intervalo de tiempo entre muestras. También se establece un número de muestras utilizadas para calcular un promedio de la lectura del ADC, lo que permite reducir el ruido de la señal antes de enviarla al sistema de visualización.
+>
+> Posteriormente se define una máquina de estados que controla las diferentes etapas del sistema, como reposo, calibración durante la respiración y ejecución normal del monitoreo. Finalmente, se inicializan las variables necesarias para el proceso de calibración, incluyendo valores de referencia de voltaje, los umbrales utilizados para clasificar los niveles fisiológicos de la señal y un parámetro de histéresis que evita cambios abruptos o inestables en la clasificación del nivel detectado.
+
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+<table>
+<tr>
+<td width="40%">
+
+<p align="center">
+<img src="Captura de pantalla 2026-03-04 233657.png" width="800">
+</p>
+
+<p align="center">
+<em>Figura 9. Montaje General.</em>
+</p>
+
+</td>
+
+<td width="60%">
+
+### Descripción
+> En esta sección inicial del código se configuran los elementos necesarios para la adquisición de la señal GSR utilizando el microcontrolador ESP32. Primero se incluye la biblioteca **BluetoothSerial**, la cual permite establecer comunicación inalámbrica entre el ESP32 y el computador mediante Bluetooth. Posteriormente se define el nombre del dispositivo Bluetooth para su identificación durante la conexión.
+>
+> A continuación, se configuran los parámetros de adquisición de la señal, incluyendo el pin analógico utilizado para leer el sensor, la frecuencia de muestreo del sistema y el intervalo de tiempo entre muestras. También se establece un número de muestras utilizadas para calcular un promedio de la lectura del ADC, lo que permite reducir el ruido de la señal antes de enviarla al sistema de visualización.
+>
+> Posteriormente se define una máquina de estados que controla las diferentes etapas del sistema, como reposo, calibración durante la respiración y ejecución normal del monitoreo. Finalmente, se inicializan las variables necesarias para el proceso de calibración, incluyendo valores de referencia de voltaje, los umbrales utilizados para clasificar los niveles fisiológicos de la señal y un parámetro de histéresis que evita cambios abruptos o inestables en la clasificación del nivel detectado.
+
+</td>
+</tr>
+</table>
+
+
+
+
 
 
 
