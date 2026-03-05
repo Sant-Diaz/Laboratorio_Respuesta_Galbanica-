@@ -527,7 +527,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="40%">
 
 <p align="center">
-<img src="Captura de pantalla 2026-03-04 233657.png" width="800">
+<img src="Captura de pantalla 2026-03-04 234013.png" width="800">
 </p>
 
 <p align="center">
@@ -539,11 +539,10 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="60%">
 
 ### Descripción
-> En esta sección inicial del código se configuran los elementos necesarios para la adquisición de la señal GSR utilizando el microcontrolador ESP32. Primero se incluye la biblioteca **BluetoothSerial**, la cual permite establecer comunicación inalámbrica entre el ESP32 y el computador mediante Bluetooth. Posteriormente se define el nombre del dispositivo Bluetooth para su identificación durante la conexión.
+> En esta sección del código se definen varias funciones auxiliares encargadas del procesamiento de la señal adquirida por el ESP32. Primero se implementa una función que realiza múltiples lecturas del convertidor analógico-digital (ADC) y calcula su promedio, lo que permite reducir el ruido presente en la medición del sensor. Posteriormente se define una función que convierte el valor digital obtenido del ADC en un voltaje real, considerando la resolución del convertidor y el rango de referencia del sistema.
 >
-> A continuación, se configuran los parámetros de adquisición de la señal, incluyendo el pin analógico utilizado para leer el sensor, la frecuencia de muestreo del sistema y el intervalo de tiempo entre muestras. También se establece un número de muestras utilizadas para calcular un promedio de la lectura del ADC, lo que permite reducir el ruido de la señal antes de enviarla al sistema de visualización.
->
-> Posteriormente se define una máquina de estados que controla las diferentes etapas del sistema, como reposo, calibración durante la respiración y ejecución normal del monitoreo. Finalmente, se inicializan las variables necesarias para el proceso de calibración, incluyendo valores de referencia de voltaje, los umbrales utilizados para clasificar los niveles fisiológicos de la señal y un parámetro de histéresis que evita cambios abruptos o inestables en la clasificación del nivel detectado.
+> Además, se incluye una función que traduce el nivel fisiológico detectado a una etiqueta de texto (bajo, moderado o alto), facilitando su transmisión y visualización en el sistema de monitoreo. También se implementa un procedimiento para calcular los umbrales de clasificación de la señal a partir de los valores obtenidos durante la fase de calibración, estableciendo límites que permiten diferenciar los distintos niveles de activación fisiológica. Finalmente, se utiliza un método de clasificación con histéresis, el cual evita cambios bruscos o inestables en la detección del nivel al introducir un pequeño margen de tolerancia entre los umbrales de subida y bajada de la señal.
+
 
 </td>
 </tr>
