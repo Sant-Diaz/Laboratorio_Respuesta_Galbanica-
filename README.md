@@ -273,7 +273,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 
 
 <p align="center">
-  <img src="Imagen_6.png" width="300">
+  <img src="Imagen_6.jpeg" width="300">
 </p>
 
 <p align="center">
@@ -281,7 +281,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-  <img src="Imagen_7.png" width="300">
+  <img src="Imagen_7.jpeg" width="300">
 </p>
 
 <p align="center">
