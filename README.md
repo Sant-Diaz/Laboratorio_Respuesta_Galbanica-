@@ -442,7 +442,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="40%">
 
 <p align="center">
-<img src="Captura de pantalla 2026-03-04 232809.png" width="800">
+<img src="Captura de pantalla 2026-03-04 233041.png" width="800">
 </p>
 
 <p align="center">
@@ -454,10 +454,44 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="60%">
 
 ### Descripción
-> En esta sección del código se almacenan y gestionan los datos válidos obtenidos durante la adquisición de la señal. Primero, cada muestra recibida se guarda en el archivo CSV junto con su tiempo en milisegundos, el tiempo relativo en segundos, el voltaje medido y el nivel fisiológico detectado, permitiendo conservar un registro completo de la señal para análisis posterior. Posteriormente, los valores de tiempo y voltaje se almacenan temporalmente en buffers que serán utilizados para la visualización de la señal en la gráfica en tiempo real. Finalmente, el programa verifica si el nivel fisiológico detectado ha cambiado con respecto al anterior; si ocurre un cambio, se muestra en la consola una notificación indicando el nuevo estado fisiológico, clasificado como bajo, moderado o alto, junto con una breve interpretación del estado de activación fisiológica del usuario.
+> En esta sección del código se controla la actualización de la visualización de la señal en tiempo real. Primero se verifica si se recibió al menos un nuevo dato; en caso contrario, el programa continúa esperando sin realizar operaciones adicionales. Cuando se detectan nuevos datos, se implementa una ventana deslizante de visualización, conservando únicamente las muestras correspondientes al intervalo de tiempo definido para la gráfica. Esto permite mostrar de forma continua únicamente los datos más recientes, evitando que la gráfica crezca indefinidamente. Posteriormente se actualizan los puntos de la gráfica utilizando los valores almacenados en los buffers de tiempo y voltaje, ajustando además los límites del eje temporal para mantener visible únicamente la ventana seleccionada. Finalmente, se controla la frecuencia de actualización de la interfaz gráfica para optimizar el rendimiento del programa y evitar un refresco excesivo de la pantalla.
 </td>
 </tr>
 </table>
+
+
+
+
+
+
+
+
+<table>
+<tr>
+<td width="40%">
+
+<p align="center">
+<img src="Captura de pantalla 2026-03-04 233041.png" width="800">
+</p>
+
+<p align="center">
+<em>Figura 9. Montaje General.</em>
+</p>
+
+</td>
+
+<td width="60%">
+
+### Descripción
+> En esta sección del código se controla la actualización de la visualización de la señal en tiempo real. Primero se verifica si se recibió al menos un nuevo dato; en caso contrario, el programa continúa esperando sin realizar operaciones adicionales. Cuando se detectan nuevos datos, se implementa una ventana deslizante de visualización, conservando únicamente las muestras correspondientes al intervalo de tiempo definido para la gráfica. Esto permite mostrar de forma continua únicamente los datos más recientes, evitando que la gráfica crezca indefinidamente. Posteriormente se actualizan los puntos de la gráfica utilizando los valores almacenados en los buffers de tiempo y voltaje, ajustando además los límites del eje temporal para mantener visible únicamente la ventana seleccionada. Finalmente, se controla la frecuencia de actualización de la interfaz gráfica para optimizar el rendimiento del programa y evitar un refresco excesivo de la pantalla.
+</td>
+</tr>
+</table>
+
+
+
+
+
 
 
 
