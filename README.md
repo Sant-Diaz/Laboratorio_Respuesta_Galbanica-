@@ -598,7 +598,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="40%">
 
 <p align="center">
-<img src="Captura de pantalla 2026-03-04 234405.png" width="800">
+<img src="Captura de pantalla 2026-03-04 234712.png" width="800">
 </p>
 
 <p align="center">
@@ -610,17 +610,60 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="60%">
 
 ### Descripción
-> En esta sección del código se implementan funciones relacionadas con la clasificación de la señal y la inicialización del sistema en el ESP32. Primero se utiliza una función de clasificación con histéresis que determina el nivel fisiológico de la señal a partir del voltaje medido y del estado previo, permitiendo identificar transiciones entre niveles bajo, moderado y alto sin que se produzcan cambios inestables debido a pequeñas fluctuaciones de la señal.
+> En esta sección del código se implementa el **bucle principal de ejecución del ESP32**, encargado de leer continuamente la señal del sensor y gestionar el comportamiento del sistema mediante una **máquina de estados**. Inicialmente, el programa verifica si se ha recibido un comando desde el computador a través de Bluetooth; si se detecta el carácter **“C”**, se inicia el proceso de calibración del sistema.
 >
-> Posteriormente se define una función encargada de iniciar el proceso de calibración del sistema. En esta etapa se reinician las variables utilizadas para calcular los valores de referencia de la señal, incluyendo el voltaje base, los valores mínimo y máximo registrados durante la calibración y los umbrales que posteriormente se emplearán para la clasificación de los niveles fisiológicos. Además, se envía un mensaje mediante Bluetooth indicando el inicio de la fase de calibración en reposo.
+> Posteriormente se realiza la lectura del sensor mediante el convertidor analógico-digital, se convierte el valor obtenido a voltaje y se registra el tiempo correspondiente de la medición. Con estos datos, el sistema evalúa el estado actual de funcionamiento. Si el sistema se encuentra en estado **IDLE**, simplemente transmite los datos crudos de la señal al computador sin aplicar ningún procesamiento adicional.
 >
-> Finalmente, en la función de configuración inicial del microcontrolador se establecen los parámetros básicos del sistema, como la velocidad de comunicación serial y la resolución del convertidor analógico-digital. También se inicia la comunicación Bluetooth con el nombre previamente definido para el dispositivo. Una vez establecida la conexión, el sistema queda en estado de espera y envía un mensaje indicando que está listo para comenzar el proceso de calibración cuando reciba el comando correspondiente.
+> Cuando el sistema entra en el estado **CAL_REST**, comienza la fase de calibración en reposo, la cual dura aproximadamente 35 segundos. Durante este periodo se acumulan las mediciones de voltaje para calcular posteriormente un valor promedio que representará el nivel base de la señal. Una vez finalizado este tiempo, se calcula el voltaje de referencia y el sistema cambia al siguiente estado de calibración, enviando mensajes al computador para indicar la finalización de la fase de reposo y el inicio de la fase de respiración controlada.
+
 
 
 </td>
 </tr>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table>
+<tr>
+<td width="40%">
+
+<p align="center">
+<img src="Captura de pantalla 2026-03-04 234712.png" width="800">
+</p>
+
+<p align="center">
+<em>Figura 9. Montaje General.</em>
+</p>
+
+</td>
+
+<td width="60%">
+
+### Descripción
+> En esta sección del código se implementa el **bucle principal de ejecución del ESP32**, encargado de leer continuamente la señal del sensor y gestionar el comportamiento del sistema mediante una **máquina de estados**. Inicialmente, el programa verifica si se ha recibido un comando desde el computador a través de Bluetooth; si se detecta el carácter **“C”**, se inicia el proceso de calibración del sistema.
+>
+> Posteriormente se realiza la lectura del sensor mediante el convertidor analógico-digital, se convierte el valor obtenido a voltaje y se registra el tiempo correspondiente de la medición. Con estos datos, el sistema evalúa el estado actual de funcionamiento. Si el sistema se encuentra en estado **IDLE**, simplemente transmite los datos crudos de la señal al computador sin aplicar ningún procesamiento adicional.
+>
+> Cuando el sistema entra en el estado **CAL_REST**, comienza la fase de calibración en reposo, la cual dura aproximadamente 35 segundos. Durante este periodo se acumulan las mediciones de voltaje para calcular posteriormente un valor promedio que representará el nivel base de la señal. Una vez finalizado este tiempo, se calcula el voltaje de referencia y el sistema cambia al siguiente estado de calibración, enviando mensajes al computador para indicar la finalización de la fase de reposo y el inicio de la fase de respiración controlada.
+
+
+
+</td>
+</tr>
+</table>
 
 
 
