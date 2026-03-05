@@ -265,7 +265,7 @@ Estos valores son:
 Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establecidas.
 # MONTAJE 
 <p align="center">
-  <img src="Imagen_2.png" width="500">
+  <img src="Imagen_6.jpeg" width="500">
 </p>
 <p align="center">
   <em>Figura 6. Montaje General.</em>
