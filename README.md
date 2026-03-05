@@ -471,7 +471,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="40%">
 
 <p align="center">
-<img src="Captura de pantalla 2026-03-04 233041.png" width="800">
+<img src="Captura de pantalla 2026-03-04 233238.png" width="800">
 </p>
 
 <p align="center">
@@ -483,13 +483,38 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="60%">
 
 ### Descripción
-> En esta sección del código se controla la actualización de la visualización de la señal en tiempo real. Primero se verifica si se recibió al menos un nuevo dato; en caso contrario, el programa continúa esperando sin realizar operaciones adicionales. Cuando se detectan nuevos datos, se implementa una ventana deslizante de visualización, conservando únicamente las muestras correspondientes al intervalo de tiempo definido para la gráfica. Esto permite mostrar de forma continua únicamente los datos más recientes, evitando que la gráfica crezca indefinidamente. Posteriormente se actualizan los puntos de la gráfica utilizando los valores almacenados en los buffers de tiempo y voltaje, ajustando además los límites del eje temporal para mantener visible únicamente la ventana seleccionada. Finalmente, se controla la frecuencia de actualización de la interfaz gráfica para optimizar el rendimiento del programa y evitar un refresco excesivo de la pantalla.
+> En esta sección final del código se realiza el cierre adecuado del proceso de adquisición de datos. Primero se cierra el archivo CSV donde se almacenaron las mediciones, asegurando que toda la información registrada quede correctamente guardada. Posteriormente se muestran en la consola mensajes que indican la finalización del proceso y la ubicación del archivo generado. Luego, el programa intenta guardar la gráfica obtenida durante la adquisición en dos formatos: una imagen en formato PNG para su visualización o inclusión en informes, y un archivo en formato FIG que permite reabrir y modificar la gráfica posteriormente en MATLAB. Finalmente, se libera la conexión con el puerto serial utilizado para la comunicación con el sistema embebido, cerrando así completamente la ejecución del programa.
 </td>
 </tr>
 </table>
 
 
 
+
+## Codigo Arduino para la SP32
+
+
+<table>
+<tr>
+<td width="40%">
+
+<p align="center">
+<img src="Captura de pantalla 2026-03-04 233238.png" width="800">
+</p>
+
+<p align="center">
+<em>Figura 9. Montaje General.</em>
+</p>
+
+</td>
+
+<td width="60%">
+
+### Descripción
+> En esta sección final del código se realiza el cierre adecuado del proceso de adquisición de datos. Primero se cierra el archivo CSV donde se almacenaron las mediciones, asegurando que toda la información registrada quede correctamente guardada. Posteriormente se muestran en la consola mensajes que indican la finalización del proceso y la ubicación del archivo generado. Luego, el programa intenta guardar la gráfica obtenida durante la adquisición en dos formatos: una imagen en formato PNG para su visualización o inclusión en informes, y un archivo en formato FIG que permite reabrir y modificar la gráfica posteriormente en MATLAB. Finalmente, se libera la conexión con el puerto serial utilizado para la comunicación con el sistema embebido, cerrando así completamente la ejecución del programa.
+</td>
+</tr>
+</table>
 
 
 
