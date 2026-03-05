@@ -260,9 +260,9 @@ Estos valores son:
 - Extremadamente alejados de niveles peligrosos definidos por IEC 60479-1.
 
 Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establecidas.
-### MONTAJE 
-### Codigo 
-### TOMA DE DATOS
+# MONTAJE 
+# Codigo 
+# TOMA DE DATOS
 
 # Preguntas de Discusión
 - **¿A qué se debe que una inspiración profunda incremente la magnitud de la respuesta galvánica cutánea (GSR)?:**
