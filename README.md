@@ -295,24 +295,20 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="40%">
 
 <p align="center">
-<img src="Imagen_7.jpeg" width="300">
+<img src="Captura de pantalla 2026-03-04 225717.png" width="800">
 </p>
 
 <p align="center">
-<em>Figura 6. Montaje General.</em>
+<em>Figura 9. Montaje General.</em>
 </p>
 
 </td>
 
 <td width="60%">
 
-### Descripción del montaje
+### Descripción
+> En esta sección del código se realiza la configuración inicial del sistema de adquisición de la señal de conductancia cutánea (GSR). Primero se limpian las variables, la consola y las figuras abiertas en MATLAB para asegurar una ejecución sin conflictos. Posteriormente se definen los parámetros de comunicación serial, incluyendo el puerto y la velocidad de transmisión, así como el nombre del archivo donde se almacenarán los datos adquiridos. También se establecen los parámetros de visualización de la gráfica en tiempo real, como la ventana temporal mostrada y el intervalo de actualización. Finalmente, se crea el archivo en formato CSV donde se guardarán las mediciones de tiempo, voltaje y nivel fisiológico detectado, escribiendo además la cabecera de las columnas. El sistema muestra en consola mensajes informativos indicando el inicio del proceso y el archivo donde se almacenarán los datos.
 
-El sistema de adquisición de conductancia cutánea se implementó utilizando un microcontrolador encargado de medir las variaciones de voltaje producidas por la respuesta galvánica de la piel (GSR).  
-
-La señal es adquirida mediante un circuito de acondicionamiento conectado a electrodos ubicados en la superficie de la piel. Estas variaciones de voltaje son enviadas al sistema embebido, el cual procesa la señal y transmite los datos al computador a través de comunicación serial.  
-
-Posteriormente, los datos son visualizados en tiempo real mediante MATLAB, donde también se almacenan para su análisis posterior.
 
 </td>
 </tr>
