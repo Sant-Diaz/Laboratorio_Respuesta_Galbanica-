@@ -437,6 +437,40 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 
 
 
+<table>
+<tr>
+<td width="40%">
+
+<p align="center">
+<img src="Captura de pantalla 2026-03-04 232809.png" width="800">
+</p>
+
+<p align="center">
+<em>Figura 9. Montaje General.</em>
+</p>
+
+</td>
+
+<td width="60%">
+
+### Descripción
+> En esta sección del código se almacenan y gestionan los datos válidos obtenidos durante la adquisición de la señal. Primero, cada muestra recibida se guarda en el archivo CSV junto con su tiempo en milisegundos, el tiempo relativo en segundos, el voltaje medido y el nivel fisiológico detectado, permitiendo conservar un registro completo de la señal para análisis posterior. Posteriormente, los valores de tiempo y voltaje se almacenan temporalmente en buffers que serán utilizados para la visualización de la señal en la gráfica en tiempo real. Finalmente, el programa verifica si el nivel fisiológico detectado ha cambiado con respecto al anterior; si ocurre un cambio, se muestra en la consola una notificación indicando el nuevo estado fisiológico, clasificado como bajo, moderado o alto, junto con una breve interpretación del estado de activación fisiológica del usuario.
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
