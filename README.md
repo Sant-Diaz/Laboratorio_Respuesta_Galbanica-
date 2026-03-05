@@ -299,7 +299,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 9.</em>
 </p>
 
 </td>
@@ -323,7 +323,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 10.</em>
 </p>
 
 </td>
@@ -351,7 +351,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 11.</em>
 </p>
 
 </td>
@@ -382,7 +382,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 12.</em>
 </p>
 
 </td>
@@ -413,7 +413,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 13.</em>
 </p>
 
 </td>
@@ -446,7 +446,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 14.</em>
 </p>
 
 </td>
@@ -475,7 +475,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 15.</em>
 </p>
 
 </td>
@@ -503,7 +503,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 16.</em>
 </p>
 
 </td>
@@ -531,7 +531,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 17.</em>
 </p>
 
 </td>
@@ -563,7 +563,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 18.</em>
 </p>
 
 </td>
@@ -602,7 +602,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 19.</em>
 </p>
 
 </td>
@@ -641,11 +641,11 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="40%">
 
 <p align="center">
-<img src="Captura de pantalla 2026-03-04 234712.png" width="800">
+<img src="Captura de pantalla 2026-03-04 234924.png" width="800">
 </p>
 
 <p align="center">
-<em>Figura 9. Montaje General.</em>
+<em>Figura 20.</em>
 </p>
 
 </td>
@@ -653,12 +653,9 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 <td width="60%">
 
 ### Descripción
-> En esta sección del código se implementa el **bucle principal de ejecución del ESP32**, encargado de leer continuamente la señal del sensor y gestionar el comportamiento del sistema mediante una **máquina de estados**. Inicialmente, el programa verifica si se ha recibido un comando desde el computador a través de Bluetooth; si se detecta el carácter **“C”**, se inicia el proceso de calibración del sistema.
+> En esta sección final del código se gestionan las últimas etapas de la máquina de estados encargada del proceso de calibración y del monitoreo continuo de la señal GSR. Cuando el sistema se encuentra en el estado **CAL_BREATH**, se inicia una fase de aproximadamente 50 segundos en la que el usuario realiza respiraciones profundas. Durante este intervalo el sistema registra los valores mínimo y máximo de voltaje de la señal, los cuales representan la variación fisiológica producida por la respiración. Al finalizar esta etapa se calculan automáticamente los umbrales de clasificación a partir del voltaje base y del rango observado, permitiendo establecer los límites que diferenciarán los distintos niveles de activación fisiológica.
 >
-> Posteriormente se realiza la lectura del sensor mediante el convertidor analógico-digital, se convierte el valor obtenido a voltaje y se registra el tiempo correspondiente de la medición. Con estos datos, el sistema evalúa el estado actual de funcionamiento. Si el sistema se encuentra en estado **IDLE**, simplemente transmite los datos crudos de la señal al computador sin aplicar ningún procesamiento adicional.
->
-> Cuando el sistema entra en el estado **CAL_REST**, comienza la fase de calibración en reposo, la cual dura aproximadamente 35 segundos. Durante este periodo se acumulan las mediciones de voltaje para calcular posteriormente un valor promedio que representará el nivel base de la señal. Una vez finalizado este tiempo, se calcula el voltaje de referencia y el sistema cambia al siguiente estado de calibración, enviando mensajes al computador para indicar la finalización de la fase de reposo y el inicio de la fase de respiración controlada.
-
+> Posteriormente el sistema pasa al estado **RUN**, en el cual comienza la operación normal de monitoreo. En esta fase cada nueva medición de voltaje es evaluada mediante el algoritmo de clasificación con histéresis, determinando si la respuesta fisiológica corresponde a un nivel bajo, moderado o alto. Finalmente, los datos de tiempo, lectura del ADC, voltaje y nivel detectado se transmiten continuamente al computador a través de la comunicación Bluetooth, permitiendo su visualización y registro en tiempo real.
 
 
 </td>
