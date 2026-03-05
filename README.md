@@ -83,7 +83,7 @@ Estudios que comparan ubicaciones para conductancia cutánea muestran:
 | Frente                        | Poco fiable                            | Alta tasa de sudor, pero baja correlación con EDA emocional  |
 | Espalda / pecho               | Baja reactividad                       | No recomendadas como sustituto de dedos                      |
 
-**Figura 1.** Comparación de localizaciones para medir EDA.
+**Figura 4.** Comparación de localizaciones para medir EDA.
 
 ---
 
@@ -125,7 +125,7 @@ Las curvas de IEC 60479-1 para CA de baja frecuencia muestran que [23][26][29]:
 | ≥50–100 mA (≈100 ms o más) | Alto riesgo de fibrilación ventricular y muerte | [23][26][28] |
 
 <p align="center">
-  <em>Figura 4. Rangos típicos de corrientes y efectos en CA 50/60 Hz</em>
+  <em>Figura 5. Rangos típicos de corrientes y efectos en CA 50/60 Hz</em>
 </p>
 
 
@@ -268,7 +268,7 @@ Por lo tanto, el sistema es eléctricamente seguro bajo las condiciones establec
 </p>
 
 <p align="center">
-  <em>Figura 4. Adquisición de la señal.</em>
+  <em>Figura 7. Adquisición de la señal.</em>
 </p>
 
 # Preguntas de Discusión
